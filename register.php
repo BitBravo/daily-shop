@@ -475,7 +475,7 @@ include("funcs/funcs.php");
 				$c_pass=$_POST['pass'];
 			
 				$sel_c = "select * from customers where customer_email='$c_email' AND customer_pass='$c_pass'";
-				$run_c = mysqli_query($conn,$sel_c);
+				$run_c = mysqli_query($conn, $sel_c);
 				
 				$check_customer = mysqli_num_rows($run_c);
 				
